@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnInstagram = document.getElementById('btn-instagram');
   const btnLinkedin = document.getElementById('btn-linkedin');
   const btnGithub = document.getElementById('btn-github');
+  const btnMail = document.getElementById('btn-mail');
 
   btnInstagram.addEventListener('click', () => {
     window.open('https://www.instagram.com/nanoantelo/', '_blank');
@@ -14,4 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
   btnGithub.addEventListener('click', () => {
     window.open('https://github.com/matias-antelo', '_blank');
   });
+  btnMail.addEventListener('click', () => {
+    window.location.href = 'contacto.html'; 
+  });
 });
+
+
