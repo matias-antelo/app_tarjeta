@@ -1,15 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 header {
-  position: relative;
-  height: 300px;
+  width: 100%;
+  padding-top:  40px;
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Todo en columna */
   align-items: center;
   justify-content: flex-end;
-  padding-bottom: 50px;
-  background-color: black;
+  background-image: url('FOTO/link\ 1.png'); /* ruta de la foto */
+  background-size: cover; /* hace que la imagen ocupe todo el header */
+  background-position: center; /* centra la imagen */
+  background-repeat: no-repeat; /* evita que se repita */
 }
+.social-icons {
+  display: flex;
+  flex-direction: row; /* explícito en fila */
+  gap: 10px;           /* espacio entre íconos */
+  margin-top: 10px;
+}
+
+.btn-header {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+.btn-header:hover {
+  background-color: #555;
+}
+
 .profile-pic {
       width: 90px;
       height: 90px;
@@ -17,6 +55,8 @@ header {
       border: 3px solid white;
       object-fit: cover;
       margin-bottom: 10px;
+      display: flex;
+  
     }
 
 h1 {
@@ -34,10 +74,11 @@ h2 {
 
 main {
   flex: 1;
-  padding: 100px;
+  padding: 90px 0;
   text-align: center;
   font-size: 1rem;
   line-height: 1.5;
+   
 }
 
 footer {
@@ -46,6 +87,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 15px;
+
 }
 
 .contact-btn {
@@ -60,6 +102,7 @@ footer {
   align-items: center;
   gap: 8px;
   transition: background-color 0.2s;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .contact-btn:hover {
@@ -68,7 +111,7 @@ footer {
 
 @media (max-width: 500px) {
   header {
-    height: 250px;
+    height: 300px;
     padding-bottom: 40px;
   }
 
@@ -78,11 +121,13 @@ footer {
   }
 
   h1 {
+    font-family: 'Courier New';
     font-size: 1.3rem;
   }
 
   h2 {
     font-size: 0.9rem;
+    font-family: 'Courier New';
   }
 
   .contact-btn {
