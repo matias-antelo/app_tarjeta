@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   btnMail.addEventListener('click', () => {
     window.location.href = 'contacto.html'; 
   });
+  
 });
 
 
