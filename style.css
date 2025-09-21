@@ -23,11 +23,13 @@ header {
   background-size: cover; /* hace que la imagen ocupe todo el header */
   background-position: center; /* centra la imagen */
   background-repeat: no-repeat; /* evita que se repita */
+  margin-top: -20px;
+
 }
 .social-icons {
   display: flex;
   flex-direction: row; /* explícito en fila */
-  gap: 10px;           /* espacio entre íconos */
+  gap: 30px;           /* espacio entre íconos */
   margin-top: 10px;
 }
 
@@ -35,10 +37,10 @@ header {
   background-color: #444;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 20px 25px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -94,10 +96,10 @@ footer {
   background-color: #444;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   gap: 8px;
