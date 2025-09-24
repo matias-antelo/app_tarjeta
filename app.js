@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnGithub = document.getElementById('btn-github');
   const btnMail = document.getElementById('btn-mail');
   const btnwhatsapp = document.getElementById("btnwhatsapp");
+  const btnllamada = document.getElementById("btnllamada");
 
   btnInstagram.addEventListener('click', () => {
     window.open('https://www.instagram.com/nanoantelo/', '_blank');
@@ -21,7 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   btnwhatsapp.addEventListener("click", () => {
     window.open("https://wa.me/541166087811", "_blank");
-
+  });
+  btnllamada.addEventListener("click", () => {
+    window.location.href = "tel:+5491166087811";
   });
 
 });
